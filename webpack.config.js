@@ -4,6 +4,7 @@ module.exports = (env, options) => {
             'echarts-liquidfill': __dirname + '/index.js'
         },
         output: {
+            globalObject: 'this',
             libraryTarget: 'umd',
             library: ['echarts-liquidfill'],
             path: __dirname + '/dist',
